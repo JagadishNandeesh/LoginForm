@@ -1,0 +1,70 @@
+{
+  "name": "MyProject",
+  "version": "0.0.1",
+  "description": "Awesome project developed with TypeORM.",
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.1",
+    "@types/jest": "^22.2.3",
+    "@types/node": "^9.6.6",
+    "@types/uuid": "^3.4.3",
+    "gql2ts": "^1.7.2",
+    "jest": "^22.4.3",
+    "nodemon": "^1.17.3",
+    "ts-jest": "^22.4.4",
+    "ts-node": "6.0.0",
+    "tslint": "^5.9.1",
+    "tslint-config-prettier": "^1.12.0",
+    "typescript": "2.8.3",
+    "winston": "^3.2.1"
+  },
+  "dependencies": {
+    "@gql2ts/from-schema": "^2.0.0-4",
+    "@types/connect-redis": "^0.0.14",
+    "@types/express": "^4.17.6",
+    "@types/ioredis": "^4.16.2",
+    "@types/node-fetch": "^2.5.7",
+    "@types/sparkpost": "^2.1.4",
+    "bcryptjs": "^2.4.3",
+    "connect-redis": "^4.0.4",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "graphql-import": "^0.5.0",
+    "graphql-request": "^1.8.2",
+    "graphql-tools": "^5.0.0",
+    "graphql-yoga": "^1.9.2",
+    "ioredis": "^4.17.1",
+    "mysql": "^2.18.1",
+    "net": "^1.0.2",
+    "node-fetch": "^2.6.0",
+    "pg": "^7.4.1",
+    "reflect-metadata": "^0.1.12",
+    "sparkpost": "^2.1.4",
+    "start-server-and-test": "^1.11.0",
+    "typeorm": "0.2.0",
+    "uuid": "^3.2.1"
+  },
+  "scripts": {
+    "start": "set NODE_ENV=development && nodemon --exec ts-node src/index.ts",
+    "gen-schema-types": "ts-node src/scripts/createTypes.ts",
+    "test": "set NODE_ENV=development jest --watch",
+    "test-server": "set NODE_ENV=development && ts-node src/index.ts",
+    "ci": "start-server-and-test test-server http://localhost:4000 test"
+  },
+  "jest": {
+    "globalSetup": "./src/testSetup/callSetup.js",
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testURL": "http://localhost:4000/",
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  }
+}
