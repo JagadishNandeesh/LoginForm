@@ -41,7 +41,7 @@
     "reflect-metadata": "^0.1.12",
     "sparkpost": "^2.1.4",
     "start-server-and-test": "^1.11.0",
-    "typeorm": "0.2.0",
+    "typeorm": "0.2.25",
     "uuid": "^3.2.1"
   },
   "scripts": {
