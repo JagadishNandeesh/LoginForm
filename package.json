@@ -36,7 +36,7 @@
     "ioredis": "^4.17.1",
     "mysql": "^2.18.1",
     "net": "^1.0.2",
-    "node-fetch": "^2.6.0",
+    "node-fetch": "^2.6.7",
     "pg": "^7.4.1",
     "reflect-metadata": "^0.1.12",
     "sparkpost": "^2.1.4",
