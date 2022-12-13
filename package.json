@@ -27,7 +27,7 @@
     "bcryptjs": "^2.4.3",
     "connect-redis": "^4.0.4",
     "dotenv": "^8.2.0",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "express-session": "^1.17.1",
     "graphql-import": "^0.5.0",
     "graphql-request": "^1.8.2",
